@@ -14,6 +14,10 @@
 
 # This is another string, but the variable name doesn't really tell us much about what we should expect it to contain
 # cute_elephant = "Hello World"
+# Variable names always go on the left of the equals sign. The value of the variable always goes on the right hand side of the equals sign.  
+# In the space below, make a variable called my_string and set its value to "Hello World"
+
+
 
 # We can get python to tell us what the value is of a variable by using the print() command
 # Inside the brackets, we put the value we want to be displayed to us
@@ -23,3 +27,10 @@
 
 # It is much more common to use a variable, and print that instead
 # Do the same thing you did in the step above, but this time, put just the variable name in the brackets of the print() command.
+
+
+
+# Run your code
+# If successful, you should have Hello World print out two times, and you programmed it to happen in two different ways.
+# A "Hello World" program is a common starting place for new programmers
+# You have just taken your first step into becoming a programmer.
