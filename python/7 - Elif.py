@@ -1,5 +1,5 @@
 # Title: Elif.py
-# Skills: 
+# Skills: Selection, Variables, Strings, Input & Output
 
 # We are going to build on what we know about selection, by adding more conditions. 
 # Let us consider this scenario: 
