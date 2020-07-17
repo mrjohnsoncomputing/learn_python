@@ -17,18 +17,24 @@
 # Variable names always go on the left of the equals sign. The value of the variable always goes on the right hand side of the equals sign.  
 # In the space below, make a variable called my_string and set its value to "Hello World"
 
+# v 1.1 - Code v #
 
+### ^^^^^^^^^^ ###
 
 # We can get python to tell us what the value is of a variable by using the print() command
 # Inside the brackets, we put the value we want to be displayed to us
 # Type the print() command in the space below and in the brackets, enter Hello World as a string. 
 
+# v 1.2 - Code v #
 
+### ^^^^^^^^^^ ###
 
 # It is much more common to use a variable, and print that instead
 # Do the same thing you did in the step above, but this time, put just the variable name in the brackets of the print() command.
 
+# v 1.3 - Code v #
 
+### ^^^^^^^^^^ ###
 
 # Run your code
 # If successful, you should have Hello World print out two times, and you programmed it to happen in two different ways.
