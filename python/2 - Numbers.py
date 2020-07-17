@@ -1,3 +1,6 @@
+# Title: 2 - Numbers.py
+# Skills: Variables, Integers, Math, Output
+
 # Now that we have learnt how to print an output to the screen, let us do something useful with it.
 # We can use variables to store the result of a calculation like so:
 # result = 1 + 1
