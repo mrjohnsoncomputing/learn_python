@@ -1,3 +1,6 @@
+# Title: 1 - Hello World.py
+# Skills: Variables, Strings, Output
+
 # Hello! The Hash symbol at the start of the line tells the computer to ignore this.
 # We refer to these lines that the computer ignores as "Comments"
 # We can use comments in our code to explain what is going on, so that other people who look at our code can understand more easily. 
