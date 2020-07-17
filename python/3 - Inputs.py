@@ -1,3 +1,6 @@
+# Title: 3 - Inputs.py
+# Skills: Variables, Strings, Integers, Math, Input & Output
+
 # So far we have been programming in a very static manner - all the values are "hard coded" into the program
 # But this is not how you normally interact with software!
 # And this does not make for a very dynamic, user friendly program.
