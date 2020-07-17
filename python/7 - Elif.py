@@ -30,3 +30,4 @@ else:
 
 # In the code above, add user input, replace the conditions and insert the correct print statement for each user.
 # Remeber to get your single equals and double equals signs round the right way!
+# Once complete, make sure you run your program a few times, testing that it works properly for all the different users.
