@@ -1,3 +1,6 @@
+# Title: 4 - Selection.py
+# Skills: Variables, Strings, Integers, Math, Selection, Input & Output
+
 # There are three main things that affect the flow of a program
 # Sequence, Selection and Iteration. 
 # Sequence is ensuring that our code is in the correct order. By completing the first three files, you have already been unknowlingly dealing with sequence. 
