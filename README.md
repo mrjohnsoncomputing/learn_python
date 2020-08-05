@@ -1,2 +1,2 @@
-# learn_programming
-A repository that aims to introduce programming concepts at the same time as learning about git and version control.
+# Learn Python
+A repository that aims to introduce programming concepts through python, while optionally at the same time learning about git and version control.
