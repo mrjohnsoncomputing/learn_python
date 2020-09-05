@@ -1,4 +1,4 @@
-# Title: 5 - Challenge.py
+# 5 - Challenge.py
 *Skills: Variables, Strings, Integers, Math, Selection, Input & Output*
 
 I would like you to take what you have learnt so far on your journey into programming and try to solve this problem.

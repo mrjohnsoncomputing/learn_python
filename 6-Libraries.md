@@ -1,4 +1,4 @@
-# Title: 6 - Libraries.py
+# 6 - Libraries.py
 *Skills: Modules, Variables, Output*
 
 A **library**, or **module**, is a file of code that you can load into your project in order to access extra commands which have been written by other people. 
