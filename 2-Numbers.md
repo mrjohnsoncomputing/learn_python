@@ -1,4 +1,4 @@
-# Title: 2 - Numbers.py
+# 2 - Numbers.py
 *Skills: Variables, Integers, Math, Output*
 
 Now that we have learnt how to print an output to the screen, let us do something useful with it.
