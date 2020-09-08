@@ -37,11 +37,11 @@ Hopefully it is obvious what you will need to change in order to get `9.py` runn
 ## 9.3
 In every section from here onwards, I will be expecting you to make a new python file for your code and changing the `.replit` file to the appropriate file name. 
 
-It is therefore a very good idea to start every python file you create with some kind of `print()` statement telling you what file is being run. For instance, if we move onto 10, create our new python file, type our code and then press `Run`, we will know what we have forgotten to do if we see the following:
+It is therefore a very good idea to start every python file you create with some kind of `print()` statement telling you what file is being run. For instance, if we move onto `10-DefiningFunctions.md`, create our new python file, type our code and then press `Run`, we will know what we have forgotten to do if we see the following:
 ```
 > 9.py Loaded Successfully
 ```
 
 You can be as creative as you like with your startup message, as long as it remains helpful to you so you know what file is being run.
 
-Right, now we've got all that out of the way, lets do some programming - see you in 10!
+Right, now we've got all that out of the way, lets do some programming - see you in `10-DefiningFunctions.md`!
