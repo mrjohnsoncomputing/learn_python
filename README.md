@@ -6,7 +6,7 @@ It is important that you stick with it and read everything carefully, because as
 I hope you enjoy this, and if you have any feedback on any of the activities please let me know. 
 
 ## Getting Started
-Click on `1-Hello World.md` to get started. (On the left)
+Open the `Beginner` folder (on the left) and click on `1-Hello World.md` to get started. 
 
 All activities where you have to write code will take place inside the `main.py` file, unless otherwise stated.
 
