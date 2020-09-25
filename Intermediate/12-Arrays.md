@@ -1,4 +1,4 @@
-# 11 - Arrays
+# 12 - Arrays
 
 `Array` is a fancy name for a list.
 
@@ -33,6 +33,17 @@ else:
   print("Sorry, we don't seem to have your name in our records.")
 
 ```
+
+## 12.1
+Copy the code from the example above and paste it into a new file.
+
+Add an extra name to the good people, (`good_person7`) and an extra name to the bad people (`bad_person7`) - you can choose what their name values will be. 
+
+Now **test** the program with your new names and make sure it gives the correct response for the good person and the bad. 
+
+**Don't forget to update the** `IF` **statement to test for the new names you have added!**
+
+## 12.2
 Look at how long the conditions are in the `IF` statement! That is absolute madness - there must be a better way! 
 
 And there is!
@@ -54,23 +65,14 @@ else:
   print("Sorry, we don't seem to have your name in our records.")
 ```
 
-## 11.1
-Copy the code from the first example (the one with the 12 separate variables for the names) and paste it into a new file.
 
-Add an extra name to the good people, (`good_person7`) and an extra name to the bad people (`bad_person7`) - you can choose what their name values will be. 
-
-Now test the program with your new names and make sure it gives the correct response for the good person and the bad. 
-
-**Don't forget to update the** `IF` **statement to test for the new names you have added!**
-
-## 11.2
-Now you are going to do the same as in `11.1`, but for the second code block above (the one that uses arrays), putting it in its own new file.
+Now you are going to do the same as in `11.1`, but for the code block above here (the one that uses arrays), putting it in its own new file.
 
 Add the names you chose in `11.1` correctly to their respectivce lists.
 
 Is there anything you need to adjust in the `IF` statement to make it work?
 
-## 11.3
+## 12.3
 Hopefully by adding to both code examples, you have got a feel for how arrays can be used to make your programming much more efficient and easier to read. 
 
 We are now going to have a look at how arrays work in more detail.

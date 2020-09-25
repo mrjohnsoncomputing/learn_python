@@ -1,4 +1,4 @@
-# 12 - Loops
+# 14 - Loops
 
 There are lots of times when we are programming where we will want to do something over and over again.
 
@@ -26,12 +26,12 @@ You should be able to see when running the above code that `i` increments each t
 
 We use the **variable** name `i` because it stands for **iterator**, and **iterate** means to do something over and over again, which is what a loop does. 
 
-## 12.1
+## 14.1
 Create a new python file and write some code that will print out the entirety of the 12 times table. 
 
 Do this however you see fit, but without trying to use a loop.
 
-## 12.2
+## 14.2
 I am assuming that you did something like the following for the last activity:
 
 ```python3
@@ -71,7 +71,7 @@ Copy this code into a new file and test it by putting in lots of wrong passwords
 
 See how the program immediately ends once you put in the correct password, but you stay in the loop all the time you are entering wrong passwords. 
 
-## 12.3
+## 14.3
 Create a new file.
 You are going to write a program that does the following:
 - Has a variable storing the correct username

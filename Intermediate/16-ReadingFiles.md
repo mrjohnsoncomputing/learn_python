@@ -1,11 +1,11 @@
-# 13 - Reading Files
+# 16 - Reading Files
 Reading files is a really important aspect in programming. 
 It allows us to write programs that can work with big data sets, analyse that data, and then return a result. 
 It also reduces the amount of data we have to *hard-code*, that is, store inside our python program.
 
 For example, take a look at the file in this folder called `names.txt`. It should be a list of names. Imagine that this file is a list of valid usernames for our program. We could have anyone update that file, without them having to know how to read and write python. Plus, we don't have to jump into the code ourselves to update it AND our code is less cluttered because all of this data is stored elsewhere. 
 
-## 13.1
+## 16.1
 We learnt to **define** functions in #10, and I always like to stick my file reading code inside a function, so that is where we are going to start.
 Firstly, take a copy of the code below and put it in a new file. 
 ```python3
@@ -56,7 +56,7 @@ If you get stuck, the solution is in the next section.
 
 **Stuck**: To have attempted and thought about the problem many times and many different ways, using all relevant information given to you, without success.
 
-## 13.2
+## 16.2
 *We are going to continue working on this code, in the same file you created in #13.1 - you won't need to create any additional code files for the rest of #13.*
 
 A big well done if you have something like the below:
@@ -88,7 +88,7 @@ Now we need to close the file. We can say `file.close()` to close our file. We *
 ### 3
 Finally we need to change what we are printing. Instead of printing the file, we need to `print()` the data we extracted from it. If you have been following carefully, you should have created a variable (maybe called `data`) and assigned `file.read()` to it. Use this variable in the brackets `()` of the `print()` command.
 
-## 13.3
+## 16.3
 The first thing we are going to do is make our function usable for any file. This is a small tweak, but it is a good programming practise to get into. 
 
 At the moment, whenever we call `read_file()`, we will always have the contents of `names.txt` read for us. But what if we wanted to read `numbers.txt`? 
@@ -129,7 +129,7 @@ Off you go, do the three tasks in the list above and I'll see you in 13.4!
 
 And the solution is in the next step, if you do get stuck - try and give it a go first though before looking!
 
-## 13.4
+## 16.4
 Okay, so I am really hoping you have **developed** your code into something like the following - don't worry if your **parameter** name is slightly different to mine. 
 ```python3
 def read_file(filename):
@@ -145,7 +145,7 @@ If you do have something similar to the above - well done! If you don't, go in a
 
 I would now like you to add one line of code to the end of your file that will print out the `numbers.txt` file after the `names.txt` file has printed. 
 
-## 13.5
+## 16.5
 
 Okay, this is good! one thing we are missing from our function is the `return` keyword that we looked at in #10. It's all very well printing the values to the screen, but we can't use those values unless we `return` them from the function. 
 
@@ -156,7 +156,7 @@ Here's what I'd like you to do:
 
 Again, if you get really stuck, you can find the solution in the next section.
 
-## 13.6
+## 16.6
 A big pat on the back if you have something that looks like the code below:
 ```python3
 def read_file(filename):
