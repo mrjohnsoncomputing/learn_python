@@ -24,7 +24,16 @@ class Person:
                    last_name=choice(surnames),
                    age=randint(1, 100),
                    sex=choice([x.value for x in Sex]),
-                   dna=Dna())
-
+                   dna=Dna.from_random())
+    @classmethod
+    def from_string(cls, person_string: str, dna: str):
+        elements = person_string.replace("(", "-").replace(",", "-").replace(")", "").split("-")
+        return cls(
+            first_name=elements[0],
+            last_name=elements[1],
+            age=elements[2],
+            sex=Sex[elements[3]],
+            dna = Dna.from_string(dna))
+    
     def __str__(self) -> str:
         return f"{self.first_name}-{self.last_name}({self.age},{self.sex})"

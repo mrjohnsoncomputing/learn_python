@@ -1,0 +1,8 @@
+create:
+    first_names: "./.data/firstnames.txt"
+    surnames: "./.data/surnames.txt"
+    people: 1000
+    output_dir: "./.data/output"
+
+parse:
+    input_dir: "./.data/output"
