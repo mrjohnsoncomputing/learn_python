@@ -16,7 +16,7 @@ def main():
     firstnames = get_names(Path("./data/firstnames.txt"))
     surnames = get_names(Path("./data/surnames.txt"))
 
-    people = 10
+    people = 10000
     for i in range(people):
         person = Person.from_random(firstnames, surnames)
         medical_file = MedicalRecord(person)
