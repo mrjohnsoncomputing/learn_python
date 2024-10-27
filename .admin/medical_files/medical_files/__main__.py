@@ -2,16 +2,29 @@ from pathlib import Path
 
 from .person import Person
 from .medical_record import MedicalRecord
+from .codon import Codon
+from .gene import Gene
 from .config import CreationConfig, ParseConfig
 import click
+
 
 def get_names(file_path: Path) -> list[str]:
     with open(file_path) as f:
         return f.read().splitlines()
 
+
 @click.group()
 def main():
     pass
+
+
+@main.command()
+@click.option("--count")
+def create_genes(count: int):
+    for i in range(int(count)):
+        gene = Gene.from_random()
+        print(gene)
+
 
 @main.command()
 @click.option("--config-file")
@@ -30,9 +43,7 @@ def create(config_file: str):
         person = Person.from_random(firstnames, surnames)
         medical_file = MedicalRecord(person)
         medical_file.write(config.output_dir)
-        if medical_file.signs_of_cancer:
-            cancer_count += 1
-    print("Cancer Victims Created:", cancer_count)
+
 
 @main.command()
 @click.option("--config-file")
@@ -47,6 +58,7 @@ def parse(config_file: str):
         if r.signs_of_cancer:
             count += 1
     print(count)
+
 
 if __name__ == "__main__":
     main()

@@ -1,44 +1,39 @@
-from dataclasses import dataclass
-from random import randint, random
-from .codon import Codon, CANCER_SEQUENCE
+from dataclasses import dataclass, field
+from random import choice, random
+from .gene import Gene, GENES
+from .codon import START_SEQUENCE, END_SEQUENCE
+
 
 @dataclass
 class Dna:
-    sequence: list[Codon]
-    count: int
-    has_cancer: bool = False
+    sequence: list[Gene] = field(default_factory=list)
 
     @classmethod
     def from_string(cls, dna_string: str):
         sequence = []
-        has_cancer = False
-        for i in range(0, len(dna_string), 3):
-            codon_string = dna_string[i:i+3]
-            if codon_string == CANCER_SEQUENCE:
-                has_cancer = True
-            sequence.append(Codon.from_string(codon_string))
-        return cls(
-            sequence=sequence,
-            count=len(sequence),
-            has_cancer=has_cancer)
-    
+        index = 0
+        while index < len(dna_string):
+            codon_string = dna_string[index:index + 3]
+            if codon_string == START_SEQUENCE:
+                end_index = codon_string.find(END_SEQUENCE)
+                gene = dna_string[index:end_index]
+                sequence.append(Gene.from_string(gene))
+            else:
+                index += 1
+        return cls(sequence=sequence)
+
     @classmethod
     def from_random(cls):
-        r = random()
-        return cls(
-            has_cancer = r > 0.999,
-            count = randint(50, 64),
-            sequence = self._get_codons())
-        
-    def _get_codons(self):
-        sequence = []
-        for i in range(self.count):
-            sequence.append(Codon.from_healthy())
+        missing_gene = random() > 0.99
+        genes = len(GENES)
 
-        if self.has_cancer:
-            position = randint(0, len(sequence) - 1)
-            sequence[position] = Codon.from_cancer()
-        return sequence
+        sequence = []
+        for i in range(genes):
+            sequence.append(Gene.from_random())
+
+        if missing_gene:
+            sequence.remove(choice(sequence))
+        return cls(sequence=sequence)
 
     def __str__(self) -> str:
         return "".join([str(x) for x in self.sequence])
