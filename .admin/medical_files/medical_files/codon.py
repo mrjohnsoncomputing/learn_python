@@ -1,29 +1,26 @@
+from dataclasses import dataclass, field
 from random import choice
-from abc import ABC
 
-CANCER_SEQUENCE = "AAA"
+START_SEQUENCE = "ATG"
+END_SEQUENCE = "TAA"
 
 
-class Codon(ABC):
-    _options: list[str] = ["A", "C", "G", "T"]
-    _count: int = 3
-    _sequence: list[str] = []
+@dataclass
+class Codon:
+    sequence: list[str] = field(default_factory=list)
 
     def __str__(self):
-        return "".join(self._sequence)
+        return ''.join(self.sequence)
 
+    @classmethod
+    def from_string(cls, codon_string):
+        return cls(sequence=list(codon_string))
 
-class HealthyCodon(Codon):
-
-    def __init__(self):
-        self._sequence = self.create_sequence()
-
-    def create_sequence(self):
-        sequence = CANCER_SEQUENCE
-        while sequence in [CANCER_SEQUENCE]:
-            sequence = [choice(self._options) for x in range(self._count)]
-        return sequence
-
-
-class CancerCodon(Codon):
-    _sequence: list[str] = ["A", "A", "A"]
+    @classmethod
+    def from_random(cls):
+        options: list[str] = ["A", "C", "G", "T"]
+        count: int = 3
+        sequence = START_SEQUENCE
+        while sequence in [START_SEQUENCE, END_SEQUENCE]:
+            sequence = [choice(options) for x in range(count)]
+        return cls(sequence=sequence)
