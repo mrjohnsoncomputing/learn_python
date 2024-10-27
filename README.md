@@ -1,18 +1,44 @@
-# Learn Python
-Welcome to this series of lessons which aim to take you from no knowledge of programming and guide you through a series of enjoyable activities to develop your skills and understanding. 
+# Saving Lives!
+Welcome to our medical research facility!
 
-It is important that you stick with it and read everything carefully, because as you go through the tasks, you will have to solve problems with a lot less guidance than you get in the earlier files. 
+Today we are going to detect abnormalites in our patient's DNA samples, so that we can predict and treat their illnesses before they get them!
 
-I hope you enjoy this, and if you have any feedback on any of the activities please let me know. 
+- We have Patient Records which detail Name, Age and Sex in the file name.
+- Inside each file is that patient's DNA Sequence.
 
-## Getting Started
-Open the `Beginner` folder (on the left) and click on `1-Hello World.md` to get started. 
+What is a DNA Sequence? Read below!
 
-All activities where you have to write code will take place inside the `main.py` file, unless otherwise stated.
 
-## Attitude
-The idea behind these tasks is for you to be self-motivated to explore, try out new things and not worry about getting things perfect the first time round. 
+## DNA Sequences
 
-It is down to you to put in the effort, and I think that you will easily get out whatever you put into this. 
+### DNA
+DNA is found in the nucleus in most cells in your body.
+- It contains the instructions for the cells to know what they need to do.
+- DNA can be thought of as a sequence of Genes.
 
-**Happy coding!**
+### Genes
+Genes give you certain characteristics, such as your eye colour, or the ability to roll your tongue.
+- A Gene is a sequence of Codons.
+- A Gene starts with a **Start Codon** `ATG` and finishes with an **End Codon** `TAA`.
+
+
+### Codons
+Codons are made up of three letters, and each letter represents a Nucleotide.
+
+### Nucleotides
+Nucleotides can be one of 
+- "A"
+- "T"
+- "C"
+- "G"
+
+### Test your knowledge
+How many Codons are in the following Gene?
+```
+ATGTGCGATTAA
+```
+
+How many Genes are in the following DNA Strand?
+```
+ATGGCATTTTAAATGGGCACGTGATAAGACAGAGGACAGTAATGCCAGACTAA
+```
